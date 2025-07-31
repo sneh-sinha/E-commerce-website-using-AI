@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUKCART - Premium Fashion Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader" id="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="yuklogo.png" alt="Logo" class="logo-img" />
+                    <a href="#home">YUKCART</a>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#shop" class="nav-link">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#gallery" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="slide active">
+                <div class="slide-bg" style="background-image: url('https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080')"></div>
+                <div class="slide-content">
+                    <h1 class="slide-title">Premium Collection</h1>
+                    <p class="slide-text">Discover our latest fashion trends</p>
+                    <button class="btn-primary">Shop Now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-bg" style="background-image: url('https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080')"></div>
+                <div class="slide-content">
+                    <h1 class="slide-title">New Arrivals</h1>
+                    <p class="slide-text">Exclusive designs for modern lifestyle</p>
+                    <button class="btn-primary">Explore</button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-bg" style="background-image: url('https://images.pexels.com/photos/1040881/pexels-photo-1040881.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080')"></div>
+                <div class="slide-content">
+                    <h1 class="slide-title">Summer Sale</h1>
+                    <p class="slide-text">Up to 50% off selected items</p>
+                    <button class="btn-primary">Shop Sale</button>
+                </div>
+            </div>
+        </div>
+        <div class="hero-controls">
+            <button class="hero-arrow hero-prev" id="hero-prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="hero-arrow hero-next" id="hero-next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        <div class="hero-dots" id="hero-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products" id="shop">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Products</h2>
+                <p class="section-subtitle">Discover our hand-picked selection</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-aos="fade-up">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Product 1">
+                        <div class="product-overlay">
+                            <button class="btn-overlay">Quick View</button>
+                        </div>
+                        <span class="product-badge sale">Sale</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Premium Jacket</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$99</span>
+                            <span class="price-original">$149</span>
+                        </div>
+                        <button class="btn-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/1040881/pexels-photo-1040881.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Product 2">
+                        <div class="product-overlay">
+                            <button class="btn-overlay">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Designer Dress</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$189</span>
+                        </div>
+                        <button class="btn-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Product 3">
+                        <div class="product-overlay">
+                            <button class="btn-overlay">Quick View</button>
+                        </div>
+                        <span class="product-badge new">New</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Casual Sneakers</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$129</span>
+                        </div>
+                        <button class="btn-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Product 4">
+                        <div class="product-overlay">
+                            <button class="btn-overlay">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Elegant Watch</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$299</span>
+                        </div>
+                        <button class="btn-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Gallery</h2>
+                <p class="section-subtitle">Explore our stunning collection</p>
+            </div>
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="men">Men</button>
+                <button class="filter-btn" data-filter="women">Women</button>
+                <button class="filter-btn" data-filter="sale">Sale</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="men" data-aos="zoom-in">
+                    <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Men's Fashion">
+                    <div class="gallery-overlay">
+                        <h3>Men's Collection</h3>
+                        <p>Premium Quality</p>
+                        <button class="btn-overlay">View Details</button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="women" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://i.pinimg.com/originals/4a/c4/d4/4ac4d42dd268fb1ee883345ea5ca258e.jpg" alt="Women's Fashion">
+                    <div class="gallery-overlay">
+                        <h3>Women's Collection</h3>
+                        <p>Elegant Designs</p>
+                        <button class="btn-overlay">View Details</button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="sale" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Sale Items">
+                    <div class="gallery-overlay">
+                        <h3>Sale Items</h3>
+                        <p>Up to 50% Off</p>
+                        <button class="btn-overlay">View Details</button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="men" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Accessories">
+                    <div class="gallery-overlay">
+                        <h3>Accessories</h3>
+                        <p>Complete Your Look</p>
+                        <button class="btn-overlay">View Details</button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="women" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="https://images.pexels.com/photos/1040881/pexels-photo-1040881.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Evening Wear">
+                    <div class="gallery-overlay">
+                        <h3>Evening Wear</h3>
+                        <p>Special Occasions</p>
+                        <button class="btn-overlay">View Details</button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="sale" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=400&h=400" alt="Clearance">
+                    <div class="gallery-overlay">
+                        <h3>Clearance</h3>
+                        <p>Limited Time</p>
+                        <button class="btn-overlay">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h2>About YUKCART</h2>
+                    <p>We are a premium fashion brand dedicated to bringing you the finest quality clothing and accessories. Our commitment to excellence and attention to detail sets us apart in the fashion industry.</p>
+                    <p>With over a decade of experience, we continue to innovate and inspire through our carefully curated collections that blend contemporary style with timeless elegance.</p>
+                    <button class="btn-primary">Learn More</button>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <img src="https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=600&h=600" alt="About Us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>YUKCART</h3>
+                        <p>Premium fashion for the modern lifestyle</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get updates on new arrivals and exclusive offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 YUKCART. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
